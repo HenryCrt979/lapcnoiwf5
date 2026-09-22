@@ -338,6 +338,158 @@ body {
 }
 
 /* Path to Freedom */
+/* Path to Freedom */
 .freedom-section {
+    background: linear-gradient(135deg, rgba(0, 217, 255, 0.05), rgba(179, 102, 255, 0.05));
+    padding: 4rem 2rem;
+    margin: 4rem 0;
+}
+
+.freedom-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.freedom-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.freedom-content p {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.freedom-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.freedom-card {
+    background: var(--secondary-dark);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 2rem;
+    transition: all 0.3s ease;
+}
+
+.freedom-card:hover {
+    border-color: var(--accent-teal);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 217, 255, 0.2);
+}
+
+.freedom-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Resources Section */
+.resources-section {
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 2rem;
+}
+
+.resources-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.resource-card {
+    background: var(--secondary-dark);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.resource-card:hover {
+    border-color: var(--accent-teal);
+    box-shadow: 0 10px 30px rgba(0, 217, 255, 0.2);
+}
+
+.resource-card h3 {
+    margin-bottom: 1rem;
+    color: var(--accent-teal);
+}
+
+.resource-card ul {
+    list-style: none;
+}
+
+.resource-card li {
+    margin-bottom: 0.75rem;
+}
+
+.resource-card a {
+    color: var(--text-light);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.resource-card a:hover {
+    color: var(--accent-teal);
+}
+
+/* Footer */
+footer {
+    background: var(--secondary-dark);
+    border-top: 1px solid var(--border);
+    padding: 2rem;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.footer-content p {
+    margin: 0.5rem 0;
+    color: var(--text-muted);
+}
+
+.footer-content a {
+    color: var(--accent-teal);
+    text-decoration: none;
+}
+
+.footer-content a:hover {
+    color: var(--accent-purple);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .section-header h2 {
+        font-size: 1.8rem;
+    }
+
+    .news-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .freedom-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .resources-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
     background: linear-gradient(135deg, rgba(0, 217, 255, 0.05), rgba(179, 102, 255, 0.05));
     padding:
